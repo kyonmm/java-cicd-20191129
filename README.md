@@ -18,6 +18,8 @@ git push origin master
 ```shell script
 heroku login
 heroku create
+heroku addons:create heroku-postgresql
+heroku config
 heroku stack:set container
 git push heroku master
 heroku open

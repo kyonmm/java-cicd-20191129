@@ -33,6 +33,9 @@ dependencies {
     implementation 'io.micronaut:micronaut-views'
     runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
     runtimeOnly 'org.thymeleaf:thymeleaf:3.0.11.RELEASE'
+    implementation 'io.micronaut.configuration:micronaut-jdbc-hikari'
+    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'org.postgresql:postgresql:42.2.8'
     testAnnotationProcessor platform("io.micronaut:micronaut-bom:$micronautVersion")
     testAnnotationProcessor "io.micronaut:micronaut-inject-java"
     testImplementation platform("io.micronaut:micronaut-bom:$micronautVersion")
