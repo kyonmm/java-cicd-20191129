@@ -26,6 +26,7 @@ public class TopController {
                 try (ResultSet resultSet = statement.executeQuery("SELECT 1")) {
                     while (resultSet.next()) {
                         String col = resultSet.getString(1);
+                        System.out.println(col);
                     }
                 }
             }
