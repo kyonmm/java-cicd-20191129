@@ -1,5 +1,5 @@
 build:
   docker:
     web: Dockerfile
-run:
-  web: ./gradlew run
+#run:
+#  web: ./gradlew run
