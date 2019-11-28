@@ -17,7 +17,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 @Controller("/")
-public class ExampleController {
+public class TopController {
     @Inject DataSource dataSource;
 
     @View("examples")
