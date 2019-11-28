@@ -1,0 +1,8 @@
+linter:
+  pmd_java:
+    dir: src
+    rulesets:
+      - category/java/bestpractices.xml
+      - category/java/performance.xml
+      - category/java/security.xml
+      - category/java/multithreading.xml
