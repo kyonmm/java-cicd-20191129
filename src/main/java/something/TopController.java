@@ -19,7 +19,7 @@ import java.sql.Statement;
 public class TopController {
     @Inject
     private DataSource dataSource;
-    private static final Logger LOG = LoggerFactory.getLogger(TopController.class)
+    private static final Logger LOG = LoggerFactory.getLogger(TopController.class);
 
     @View("examples")
     @Get("/")
