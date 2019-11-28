@@ -5,6 +5,8 @@ import io.micronaut.http.HttpResponse;
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
 import io.micronaut.views.View;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 import javax.sql.DataSource;
@@ -17,6 +19,7 @@ import java.sql.Statement;
 public class TopController {
     @Inject
     private DataSource dataSource;
+    private static final Logger LOG = LoggerFactory.getLogger(TopController.class)
 
     @View("examples")
     @Get("/")
@@ -26,7 +29,7 @@ public class TopController {
                 try (ResultSet resultSet = statement.executeQuery("SELECT 1")) {
                     while (resultSet.next()) {
                         String col = resultSet.getString(1);
-                        System.out.println(col);
+                        LOG.info(col);
                     }
                 }
             }
