@@ -87,7 +87,7 @@ workflows:
           filters:
             branches:
               only:
-                - dev
+                - dev/*
 #      - deploy_prod:
 #          requires:
 #            - build
