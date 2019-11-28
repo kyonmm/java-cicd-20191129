@@ -14,6 +14,13 @@ git commit
 git push origin master
 ```
 ### IntelliJ IDEA
+```
+Ctrl(Cmd) + Shift + A
+Annotation Processor
+Enter
+Check On! Enable Anottation Processing
+```
+
 ### heroku
 ```shell script
 heroku login
